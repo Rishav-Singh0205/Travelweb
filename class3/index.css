@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  color: white;
+}
+
+header nav #nav-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px;
+}
+header nav #list-item {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  width: 300px;
+}
+header nav .nav-logo {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+header nav .nav-title {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+header nav .nav-title:hover {
+  font-size: 22px;
+  transition: 1s, all ease-in-out;
+}
+#banner {
+  background-image: url("../class3/images/main.jpg");
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+#banner-tittle h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+#banner-tittle h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: white;
+}
+button {
+  border: none;
+  padding: 20px 40px;
+  color: white;
+  background-color: #006494;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+#destination {
+  margin: 30px 0;
+  padding: 0 100px;
+}
+
+#destination h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  padding: 15px 0px;
+  color: rgb(41, 40, 40);
+}
+#destination p {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0px 0px 5px 0px;
+  color: rgb(41, 40, 40);
+}
+#horizontal-line {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #006494;
+  height: 4px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+#image-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+#image-grid div {
+  height: 350px;
+  padding: 1rem;
+}
+#image-grid div img {
+  width: 100%;
+  height: 100%;
+}
+#image-grid .small {
+  flex-basis: 30%;
+}
+#image-grid .large {
+  flex-basis: 70%;
+}
+/*-------------Tour Package-----------*/
+#tour-packeg {
+  background-color: rgb(215, 211, 211);
+}
+#tour-box {
+  display: flex;
+  justify-content: center;
+}
+#tour-text {
+  justify-content: center;
+  text-align: center;
+  padding: 40px 70px;
+}
+#tour-text i {
+  color: #006494;
+  font-size: 70px;
+  margin-bottom: 30px;
+}
+#tour-text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-bottom: 20px;
+  color: rgb(43, 42, 42);
+}
+#tour-text p {
+  font-size: 1.1rem;
+}
+/*-------------------testimonial----------------*/
+#testimonials {
+  justify-content: center;
+  text-align: center;
+  margin: 30px 0;
+}
+
+#testimonials h4 {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0px 300px;
+  color: rgb(41, 40, 40);
+}
+#testo-name {
+  margin: 20px 30px;
+  font-weight: 900;
+  color: black;
+  font-size: 1.2rem;
+}
+#buttons1 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+#buttons1 input {
+  width: 25%;
+  height: 35px;
+  padding: 10px 8px;
+  border: 2px solid blue;
+  border-radius: 3px;
+  font-weight: 600;
+}
+#buttons1 .btn1 {
+  padding: 6px 30px;
+  color: white;
+  background-color: blue;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 3px;
+}
+/*-------------------------footer-----------------------*/
+#footer-items {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-content: center;
+  background-color: rgb(28, 27, 27);
+  padding: 10px 30px;
+}
+.footer-logo {
+  color: white;
+  text-decoration: none;
+}
+#footer-items h5 {
+  color: white;
+}
+#footerlist-item {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+  color: white;
+}
+/*---------------------------media query-----------------------*/
+
+@media screen and (width<=980px) {
+  #image-grid .small {
+    flex-basis: 50%;
+  }
+
+  #image-grid .large {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (width<=700px) {
+  header nav .nav-logo {
+    font-size: 20px;
+  }
+  header nav #nav-items {
+    padding: 30px 20px;
+  }
+
+  #banner-tittle {
+    margin-top: 20%;
+  }
+  #banner-tittle h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  #banner-tittle h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  button {
+    padding: 15px 25px;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+  #destination {
+    padding: 0 20px;
+  }
+  #destination h1 {
+    font-size: 2rem;
+  }
+  #destination p {
+    text-align: center;
+    font-size: 1rem;
+  }
+  #horizontal-line {
+    width: 50%;
+  }
+
+  #image-grid .small {
+    flex-basis: 100%;
+  }
+
+  #image-grid .large {
+    flex-basis: 100%;
+  }
+
+  /*--------------tour package-----------------------------*/
+  #tour-text {
+    justify-content: center;
+    text-align: center;
+    padding: 40px 15px;
+  }
+
+  #tour-text i {
+    color: #006494;
+    font-size: 40px;
+    margin-bottom: 25px;
+  }
+  #tour-text h1 {
+    font-size: 1.3rem;
+  }
+  #tour-text p {
+    font-size: 1rem;
+  }
+  /*-------------------testimonial----------------*/
+
+  #testimonials {
+    margin: 30px 0;
+  }
+
+  #testimonials h4 {
+    font-size: 1rem;
+    padding: 0px 20px;
+  }
+  #testo-name {
+    margin: 15px 30px;
+    font-size: 1.1rem;
+  }
+}
